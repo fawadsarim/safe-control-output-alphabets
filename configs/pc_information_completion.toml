@@ -1,0 +1,25 @@
+[run]
+status = "frozen_captured_state_information_completion_v5"
+crosscheck_instances = 150
+
+[exhaustive]
+safe_states = 2
+controls = 2
+recovery_horizon = 1
+max_delay = 3
+
+[structured]
+branches = 4
+max_delay = 3
+uniform_rank = 3
+uniform_max_states = 8
+static_gap_max_states = 7
+
+[random]
+seed = 20260904
+uncertain_states = 5
+recovery_actions = 3
+pending_actions = 2
+recovery_horizon = 1
+max_delay = 3
+pending_unsafe_probability = 0.15

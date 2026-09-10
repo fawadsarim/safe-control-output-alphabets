@@ -1,0 +1,36 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+build/
+dist/
+
+# Generated research artifacts are reproducible outputs, not source.
+artifacts/derived/*
+artifacts/tooling/*
+!artifacts/derived/.gitkeep
+
+# Disposable local inspection products.
+tmp/
+prompt.txt
+
+# Local paper builds.
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.log
+paper/*.out
+paper/*.pdf
+paper/*.fls
+paper/*.fdb_latexmk
+paper/*.synctex.gz
+
+# Reproducible submission build output (source remains under paper/).
+output/pdf/*.pdf
+!output/pdf/.gitkeep
+
+# Disposable Overleaf upload bundle; sources remain under paper/.
+/paper.zip
